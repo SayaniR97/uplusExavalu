@@ -3,18 +3,9 @@
     <div class="tab-interface">
       <Container @toggleExpand="toggleExpand" title="Menu" :expanded="expanded">
         <ul role="tablist">
-          <li
-            role="presentation"
-            v-for="(tab, index) in tabs"
-            v-bind:key="index"
-          >
-            <a
-              role="tab"
-              :tabindex="active === index ? '0' : '-1'"
-              :aria-selected="active === index ? 'true' : 'false'"
-              @click="selectTab(index)"
-              >{{ tab.props.name }}</a
-            >
+          <li role="presentation" v-for="(tab, index) in tabs" v-bind:key="index">
+            <a role="tab" :tabindex="active === index ? '0' : '-1'" :aria-selected="active === index ? 'true' : 'false'"
+              @click="selectTab(index)">{{ tab.props.name }}</a>
           </li>
         </ul>
       </Container>

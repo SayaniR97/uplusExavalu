@@ -25,43 +25,25 @@
       <tab v-if="typeof settings.todo != 'undefined'" name="To Do component">
         <ToDoSettings />
       </tab>
-      <tab
-        v-if="typeof settings.billpay != 'undefined'"
-        name="Bill Pay component"
-      >
+      <tab v-if="typeof settings.billpay != 'undefined'" name="Bill Pay component">
         <BillPaySettings />
       </tab>
-      <tab
-        v-if="typeof settings.activity != 'undefined'"
-        name="Activity component"
-      >
+      <tab v-if="typeof settings.activity != 'undefined'" name="Activity component">
         <ActivitySettings />
       </tab>
-      <tab
-        v-if="typeof settings.pega_chat != 'undefined'"
-        name="Messaging and Co-Browse"
-      >
+      <tab v-if="typeof settings.pega_chat != 'undefined'" name="Messaging and Co-Browse">
         <ChatSettings />
       </tab>
-      <tab
-        v-if="typeof settings.pega_marketing != 'undefined'"
-        name="Customer Decision Hub"
-      >
+      <tab v-if="typeof settings.pega_marketing != 'undefined'" name="Customer Decision Hub">
         <NBAMSettings />
       </tab>
-      <tab
-        v-if="typeof settings.kmhelp != 'undefined'"
-        name="Knowledge Management"
-      >
+      <tab v-if="typeof settings.kmhelp != 'undefined'" name="Knowledge Management">
         <KMHelpSettings />
       </tab>
       <tab name="Home Hero Action">
         <HomeHeroActionSettings />
       </tab>
-      <tab
-        v-if="typeof settings.offeraction != 'undefined'"
-        name="Offer Action"
-      >
+      <tab v-if="typeof settings.offeraction != 'undefined'" name="Offer Action">
         <OfferActionSettings />
       </tab>
     </Navigation>
