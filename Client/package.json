@@ -2,6 +2,7 @@
   "name": "uplus-wss",
   "version": "2.0.0",
   "scripts": {
+    "start": "index.html",
     "dev": "vite",
     "build": "vite build && node scripts/fix_files.js",
     "preview": "vite preview --port 5050",
